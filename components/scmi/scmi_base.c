@@ -36,6 +36,7 @@
 
 #include "scmi.h"
 #include "scmi_internal.h"
+#include <cstdio>
 
 /* Local defines */
 
@@ -248,6 +249,7 @@ int32_t SCMI_BaseDiscoverImplementationVersion(uint32_t channel,
 int32_t SCMI_BaseDiscoverListProtocols(uint32_t channel, uint32_t skip,
     uint32_t *numProtocols, uint32_t *protocols)
 {
+    printf("Abhin: SCMI_BaseDiscoverListProtocols start\n");
     int32_t status;
     uint32_t header;
     void *msg;

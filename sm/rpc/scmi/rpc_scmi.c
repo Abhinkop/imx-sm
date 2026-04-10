@@ -544,6 +544,7 @@ int32_t RPC_SCMI_Trigger(const lmm_rpc_trigger_t *trigger)
 /*--------------------------------------------------------------------------*/
 void RPC_SCMI_ErrorDump(uint8_t scmiInst)
 {
+    printf("RPC_SCMI_ErrorDump \n");
 #ifdef MONITOR
     /* Loop over channels */
     for (uint32_t scmiChannel = 0U; scmiChannel < SM_SCMI_NUM_CHN;
